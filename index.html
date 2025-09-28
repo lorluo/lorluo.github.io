@@ -2,134 +2,163 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Your Name</title>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>For Us 💖</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600;700&display=swap');
-
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-
     :root {
-      --bg: #2A1F1D;
-      --text: #DEC165;
-      --accent: #BE8A13;
-      --muted: #7F6A55;
-      --link: #7CC9CF;
-      --link-hover: #FFCB1B;
-      --headline: #FFEAA3;
+      --bg: #fff0f6;
+      --text: #5d3a3a;
+      --accent: #ffb6c1;
+      --headline: #ff69b4;
+      --link: #e75480;
+      --link-hover: #d6336c;
     }
 
-    html, body {
-      background-color: var(--bg);
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: var(--bg);
       color: var(--text);
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 15px;
+      font-family: 'Quicksand', sans-serif;
+      padding: 40px 20px;
       line-height: 1.6;
-      min-height: 100vh;
     }
-
-    body { padding: 40px 20px; }
 
     .container {
-      max-width: 720px;
+      max-width: 800px;
       margin: 0 auto;
-    }
-
-    .avatar-container { text-align: center; margin-bottom: 60px; }
-    .avatar {
-      width: 360px;
-      height: 360px;
-      object-fit: cover;
-      border: 2px solid var(--muted);
-      padding: 2px;
-      background: var(--bg);
+      text-align: center;
     }
 
     h1 {
-      font-size: 32px;
-      font-weight: 700;
-      text-align: center;
-      margin-bottom: 60px;
+      font-size: 36px;
       color: var(--headline);
-      letter-spacing: -0.02em;
+      margin-bottom: 20px;
     }
 
-    .section { margin-bottom: 48px; }
+    .section {
+      margin: 50px 0;
+    }
+
     .section-title {
-      font-size: 13px;
-      font-weight: 600;
+      font-size: 18px;
       color: var(--accent);
-      margin-bottom: 16px;
       text-transform: uppercase;
-      letter-spacing: 0.1em;
+      margin-bottom: 16px;
+      letter-spacing: 1px;
     }
 
-    .link-item { margin-bottom: 12px; padding-left: 16px; position: relative; }
-    .link-item::before {
-      content: "→";
-      position: absolute;
-      left: 0;
-      color: var(--muted);
-      transition: color 0.2s ease;
-    }
-    .link-item:hover::before { color: var(--link-hover); }
-    .link-item a {
-      color: var(--text);
-      text-decoration: none;
-      transition: color 0.2s ease;
+    p {
       font-size: 16px;
+      margin-bottom: 20px;
     }
-    .link-item a:hover { color: var(--headline); }
 
-    .contact-info { font-size: 14px; line-height: 1.8; color: #BFC65A; }
-    .contact-info a { color: var(--link); text-decoration: none; transition: color 0.2s ease; }
-    .contact-info a:hover { color: var(--text); }
+    /* Gallery */
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+    }
 
-    ::selection { background: var(--accent); color: var(--bg); }
+    .gallery img {
+      width: 150px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
 
-    @media (max-width: 768px) {
-      body { padding: 30px 20px; font-size: 15px; }
-      h1 { font-size: 28px; margin-bottom: 40px; }
-      .avatar { width: 150px; height: 150px; }
-      .section { margin-bottom: 36px; }
+    /* Open When Buttons */
+    .love-buttons button {
+      background-color: var(--accent);
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin: 10px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 14px;
+      transition: background 0.3s ease;
+    }
+
+    .love-buttons button:hover {
+      background-color: var(--link-hover);
+    }
+
+    footer {
+      margin-top: 60px;
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    ::selection {
+      background: var(--headline);
+      color: white;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    
-    <!-- Avatar -->
-    <div class="avatar-container">
-      <img class="avatar" src="https://via.placeholder.com/360" alt="Your Avatar">
+    <!-- 💖 Header -->
+    <h1>For You, My Love 💕</h1>
+
+    <!-- 💌 Our Story -->
+    <div class="section">
+      <div class="section-title">Our Story</div>
+      <p>
+        We met, we laughed, and we never stopped smiling since.  
+        You are my sunshine on cloudy days, my calm in chaos,  
+        my person. I made this little website for us 💗
+      </p>
+      <img src="images/first-date.jpg" alt="Our first date" width="300" style="border-radius: 12px;"/>
     </div>
 
-    <!-- Heading -->
-    <h1>Your Name</h1>
-
-    <!-- About Section -->
+    <!-- 📸 Gallery -->
     <div class="section">
-      <div class="section-title">About Me</div>
-      <p>Hello! I'm a developer, designer, or something else entirely. I love building clean and creative websites. This is a simple site hosted on GitHub Pages.</p>
-    </div>
-
-    <!-- Links -->
-    <div class="section">
-      <div class="section-title">Links</div>
-      <div class="link-item"><a href="https://github.com/yourusername" target="_blank">GitHub</a></div>
-      <div class="link-item"><a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a></div>
-      <div class="link-item"><a href="https://yourblog.com" target="_blank">Blog</a></div>
-    </div>
-
-    <!-- Contact -->
-    <div class="section">
-      <div class="section-title">Contact</div>
-      <div class="contact-info">
-        Email: <a href="mailto:you@example.com">you@example.com</a><br />
-        Twitter: <a href="https://twitter.com/yourhandle">@yourhandle</a>
+      <div class="section-title">Our Memories</div>
+      <div class="gallery">
+        <img src="images/photo1.jpg" alt="Memory 1">
+        <img src="images/photo2.jpg" alt="Memory 2">
+        <img src="images/photo3.jpg" alt="Memory 3">
+        <img src="images/photo4.jpg" alt="Memory 4">
       </div>
     </div>
 
+    <!-- 💬 Love Notes -->
+    <div class="section">
+      <div class="section-title">Love Notes</div>
+      <p>You make me a better person just by being yourself.</p>
+      <p>I'm so lucky I get to call you mine. 🥰</p>
+      <p>Even on your worst days, you're still everything to me.</p>
+    </div>
+
+    <!-- 🎁 Open When Buttons -->
+    <div class="section">
+      <div class="section-title">Open When...</div>
+      <div class="love-buttons">
+        <button onclick="alert('Hey love, I know it’s a tough day. Take a deep breath. I love you ❤️')">
+          Open when you're sad
+        </button>
+        <button onclick="alert('You are doing amazing things, even if it doesn’t feel like it right now 🌟')">
+          Open when you're stressed
+        </button>
+        <button onclick="alert('I am proud of you. Always. 💪')">
+          Open when you need motivation
+        </button>
+        <button onclick="alert('Look in the mirror. That’s the person I’m in love with 💖')">
+          Open when you feel insecure
+        </button>
+      </div>
+    </div>
+
+    <!-- ✨ Footer -->
+    <footer>
+      Made with 💘 by you for someone special
+    </footer>
   </div>
 </body>
 </html>

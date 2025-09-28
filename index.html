@@ -100,6 +100,32 @@
       background: var(--headline);
       color: white;
     }
+
+    .link-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+.link-buttons a {
+  background-color: var(--accent);
+  color: white;
+  padding: 10px 18px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: 'Nanum Pen Script', cursive;
+  transition: background 0.3s, transform 0.2s;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.link-buttons a:hover {
+  background-color: var(--link-hover);
+  transform: translateY(-2px);
+}
+
   </style>
 </head>
 <body>
@@ -113,26 +139,28 @@
       <p>
         I made this little website for us 💗
       </p>
-      <img src="us.jpeg" alt="Our first date" width="300" style="border-radius: 12px;"/>
+      <img src="images/us.jpeg" width="300" style="border-radius: 12px;"/>
     </div>
 
 <!-- 📸 Gallery Links -->
 <div class="section">
   <div class="section-title">Our Memories</div>
   <p>
-    Explore our favorite moments together 💕
+    So excited for all the adventures we will get to keep going on together 💕
   </p>
-  <div class="gallery-nav">
-    <a href="yummyeats.html">🍜 Yummy Eats</a> |
-    <a href="silly.html">🤪 Silly Moments</a>
-  </div>
+  <div class="link-buttons">
+  <a href="yummyeats.html"> Yummy Eats</a>
+  <a href="silly.html">Silly</a>
 </div>
 
     <!-- 💬 Love Notes -->
     <div class="section">
-      <div class="section-title">Love Notes</div>
-      <p>I'm so lucky I get to call you my pookie.</p>
-    </div>
+  <div class="section-title">Love Note</div>
+  <a href="lovenotes.html" class="love-link">
+    <p>I'm so lucky I get to call you my pookie. Click here to read a love letter.</p>
+  </a>
+  </div>
+
 
     <!-- 🎁 Open When Buttons -->
     <div class="section">
